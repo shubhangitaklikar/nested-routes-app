@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @blog.name %>
+</p>
+
+
+
+<!-- /posts/:post_id/comments/ -->
+<%= link_to 'Comments', blog_comments_path(@blog) %> |
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>

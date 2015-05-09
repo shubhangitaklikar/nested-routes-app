@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <b>Body:</b>
+  <%= @comment.body %>
+</p>
+
+<!-- /posts/:post_id/comments/:id/edit -->
+<%= link_to 'Edit', edit_blog_comment_path(@comment.blog, @comment) %> |
+<!-- /posts/:post_id/comments/ -->
+<%= link_to 'Back', blog_comments_path(@comment.blog) %>
